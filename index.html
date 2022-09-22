@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet formulaire</title>
+    <link rel="icon" type="image/png" href="./asset/icon.png">	
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="icon" href="./favicon/favicon.ico">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>
+            <i class="material-icons" aria-hidden="true">
+                send
+            </i>
+              Formulaire d'inscription étudiant
+        </h1>
+    </header>
+<main>
+    <fieldset>
+        <legend>
+            Inscription étudiant
+        </legend>
+         <form action="index.html" method="get">  <!-- get | post -->
+            
+            <label for="nom">
+                Votre nom
+
+            </label>
+            <input type="text" id="nom" name="nom" placeholder="votre nom" autofocus required aria aria-required="true">
+            <label for="prenom">
+                Votre prénom
+
+            </label>
+            <input type="text" id="prenom" name="prenom" placeholder="votre prenom"  required aria-required="true">
+            <label for="Date">
+                Date de naissance
+
+            </label>
+            <input type="date" id="date" name="date_naissance" placeholder="Date de naisssance" required aria-required="true">
+            <label for="phone">
+               Votre téléphone
+
+            </label>
+            <input type="tel" id="phone" name="phone" placeholder="(+33)01-02-03-04-05" required aria-required="true">
+          
+
+            <input type="submit"  value="Envoyer" >
+
+            
+        </form>
+    </fieldset>
+</main>
+
+<footer>
+    <p>
+        &copy; -Formulaire étudiant - 2022
+    </p>
+</footer>
+
+</body>
+</html>

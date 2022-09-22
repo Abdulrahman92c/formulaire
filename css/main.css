@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Junge&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap');
+/*reset */
+html{
+    font-size: 62.5%; /* 16 px * 62.5 % = 1.000 rem */
+    scroll-behavior: smooth;
+ 
+}
+body{
+    font: 1.6rem 'fredoka', sans-serif;
+    margin: 0;
+ 
+
+}
+h1,h2,h3,h4,h5,p,ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: 300 bolder;
+}
+img{
+    display: inline-block;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;    
+}
+*{
+    box-sizing: border-box;  /* permet de faire un saut dans la reference et d'ajuster la taille*/
+}
+a{
+ text-decoration: none;
+ color: #222;
+}
+ul,li{
+    list-style: none;
+    color: #222;
+    font-weight: bolder;
+}
+
+input, button{
+   border: 0;
+   background-color: transparent;
+}
+/*theme CSS*/
+:root{
+    --primary-color-theme: #3b5998;
+    --secondary-color-theme: #DFE3EE;
+    --last-color-theme: #F7F7F7;
+    --warning-theme: #5e0840;
+}
+
+header h1{
+    line-height: 7rem ;
+    text-align: center;
+    background-color: var(--primary-color-theme);
+    color: var(--last-color-theme);
+}
+
+fieldset{
+    max-width: 80rem;
+    padding: 2rem;
+    margin: 5rem auto 2rem;
+    border: solid .1rem var(--primary-color-theme);
+    border-radius: .4rem;
+}
+fieldset legend{
+    font-weight: bolder;
+    padding: .5rem;
+    text-transform: uppercase;
+}
+
+fieldset form *{
+       display: block;
+       width: 100%;
+       line-height: 4.5rem;
+       font-size: inherit;
+}
+fieldset form input[type="text"],
+fieldset form input[type="date"],
+fieldset form input[type="tel"]{
+    border-bottom: solid .1rem #ccc ;
+    transition-duration: 0.6s;
+    padding: 0 .4rem;
+    width: 35%;
+}
+fieldset form input[type="text"]:focus,
+fieldset form input[type="date"]:focus,
+fieldset form input[type="tel"]:focus{
+        outline:none;
+        box-shadow: 0 0 2rem var(--primary-color-theme);
+        width: 100%;
+}
+
+fieldset form [placeholder]{
+        font-style: italic;
+}
+fieldset form input[type="submit"]{
+    border: solid .1rem transparent;
+    border-radius: .4rem;
+    margin-top: 2rem;
+    color: #fff;
+    background-color:var(--primary-color-theme);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+footer p{
+    text-align: center;
+    font-weight: bolder;
+}
